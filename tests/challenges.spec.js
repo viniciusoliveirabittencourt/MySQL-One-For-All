@@ -20,7 +20,7 @@ describe('Queries de seleção', () => {
 
     importer.disconnect();
 
-    sequelize = new Sequelize('SpotifyClone', process.env.MYSQL_USER, process.env.MYSQL_PASSWORD, {host:process.env.HOSTNAME, dialect: 'mysql'})
+    sequelize = new Sequelize('SpotifyClone', process.env.MYSQL_USER, process.env.MYSQL_PASSWORD, {host:process.env.HOSTNAME, dialect: 'mysql'}, 50000)
   });
 
   afterAll(async () => {
